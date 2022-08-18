@@ -1,0 +1,33 @@
+/* ========== FOOTER-LINKS ========== */
+.footer-links {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px 85px;
+	&__column {
+		display: flex;
+		flex-flow: column;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: rem(21);
+		line-height: 1.5;
+		letter-spacing: 0.5px;
+		margin: 0 0 18px 0;
+	}
+	&__item {
+		width: fit-content;
+		font-size: rem(14);
+		line-height: 2;
+		letter-spacing: 0.5px;
+		transition: 0.3s ease-out;
+		& + & {
+			margin: 13px 0 0 0;
+		}
+		&:hover {
+			color: var(--text-color-hover);
+		}
+	}
+	@media (max-width: 676px) {
+		grid-template-columns: 1fr;
+	}
+}

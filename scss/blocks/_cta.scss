@@ -1,0 +1,80 @@
+/* ========== CTA ========== */
+.cta {
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		bottom: 0;
+		left: 0;
+		width: 100vw;
+		height: 50%;
+		background: #f5f6fa;
+	}
+	&__container {
+		border-radius: 20px;
+		display: flex;
+		padding: 60px 0 0 0;
+		background: url(./../img/cta/oval.svg) 50% 100% / 304px no-repeat,
+			url(./../img/cta/ovel-right.svg) top right / 225px no-repeat, var(--accent-color-fourth);
+	}
+	&__dashboard {
+		background: var(--accent-color-second);
+		padding: 25px 25px 0 0;
+		border-radius: 0 20px 0 0;
+	}
+	&__img {
+		max-width: 533px;
+	}
+	&__content {
+		max-width: 485px;
+		padding: 32px 15px 0 100px;
+		color: var(--text-color-second);
+	}
+	&__title {
+		color: inherit;
+		&:not(:last-child) {
+			margin: 0 0 15px 0;
+		}
+	}
+	&__text {
+		&:not(:last-child) {
+			margin: 0 0 30px 0;
+		}
+	}
+	&__buttons-row {
+		display: flex;
+	}
+	&__button {
+		& + & {
+			margin: 0 0 0 20px;
+		}
+	}
+
+	@media (max-width: 1130px) {
+		margin: 0;
+		&__content {
+			padding: 32px 15px 0;
+		}
+	}
+	@media (max-width: 991px) {
+		&__container {
+			flex-flow: column;
+			padding: 0 0 50px 0;
+			margin: 0 -15px;
+		}
+		&__img {
+			max-width: 100%;
+		}
+	}
+	@media (max-width: 385px) {
+		&__buttons-row {
+			flex-flow: column;
+		}
+		&__button {
+			& + & {
+				margin: 15px 0 0 0;
+			}
+		}
+	}
+}

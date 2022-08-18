@@ -1,0 +1,28 @@
+/* ========== ADVANTAGES ========== */
+.advantages {
+	padding: 128px 0 111px 0;
+	&__title {
+		text-align: center;
+		margin: 0 0 58px 0;
+	}
+	&__body {
+		display: grid;
+		// grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+		grid-template-columns: repeat(4, 1fr);
+		justify-items: center;
+		gap: 45px 35px;
+	}
+	@media (max-width: 1130px) {
+		&__body {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 50px 0 25px 0;
+	}
+	@media (max-width: 479px) {
+		 &__body {
+			grid-template-columns: 1fr;
+		 }
+	}
+}

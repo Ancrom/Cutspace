@@ -1,0 +1,14 @@
+/* ========== LOGO ========== */
+.logo {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: rem(24);
+	line-height: rem(36);
+	img {
+		display: block;
+		width: 30px;
+		height: 30px;
+		margin: 0 7px 0 0;
+	}
+}

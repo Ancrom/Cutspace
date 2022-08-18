@@ -1,0 +1,45 @@
+/* ========== BUTTON ========== */
+.button {
+	color: var(--text-color-second);
+	text-align: center;
+	font-weight: 700;
+	line-height: 1.5;
+	background: var(--accent-color-main);
+	padding: 17px 37px;
+	border-radius: 30px;
+	transition: 0.3s ease-out;
+	&:hover {
+		background: var(--accent-color-hover);
+	}
+
+	&--white {
+		background: var(--accent-color-second);
+		color: var(--text-color-main);
+		&:hover {
+			color: var(--text-color-second);
+			background: var(--accent-color-third);
+		}
+	}
+
+	&--white-play {
+		padding: 17px 30px 17px 50px;
+		background: url(./../img/icons/play.svg) 30px center / 12px no-repeat, var(--accent-color-second);
+		color: var(--text-color-main);
+		&:hover {
+			color: var(--text-color-second);
+			background: url(./../img/icons/play.svg) 30px center / 12px no-repeat, var(--accent-color-third);
+		}
+		@media (max-width: 385px) {
+			padding: 17px 37px;
+		}
+	}
+
+	&--reverse {
+		color: var(--text-color-hover);
+		background: var(--accent-color-second);
+		&:hover {
+			color: var(--text-color-hover);
+			background: var(--accent-color-second);
+		}
+	}
+}

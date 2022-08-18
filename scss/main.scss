@@ -1,0 +1,33 @@
+// RESET
+@import "./base/reset";
+
+// BASE
+@import "./base/variables";
+@import "./base/fonts";
+@import "./base/base";
+
+// BLOCKS
+@import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/logo";
+@import "./blocks/burger";
+@import "./blocks/nav";
+@import "./blocks/nav-list";
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/form";
+@import "./blocks/clients";
+@import "./blocks/provide";
+@import "./blocks/image-cards";
+@import "./blocks/tooltip";
+@import "./blocks/cta";
+@import "./blocks/how";
+@import "./blocks/how-card";
+@import "./blocks/advantages";
+@import "./blocks/advantages-item";
+@import "./blocks/thanks";
+@import "./blocks/thanks-card";
+@import "./blocks/experience";
+@import "./blocks/footer";
+@import "./blocks/social";
+@import "./blocks/footer-links";

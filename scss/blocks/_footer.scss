@@ -1,0 +1,33 @@
+/* ========== FOOTER ========== */
+.footer {
+	padding: 86px 0 82px 0;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__about {
+		&:not(:last-child) {
+			margin: 0 20px 0 0;
+		}
+		> * + * {
+			margin: 15px 0 0 0;
+		}
+	}
+	&__about-text {
+		max-width: 300px;
+		letter-spacing: 1.15px;
+	}
+	&__social {
+		margin: 40px 0 0 0;
+	}
+	@media (max-width: 991px) {
+		&__container {
+			flex-flow: column;
+		}
+		&__about {
+			&:not(:last-child) {
+				margin: 0 0 60px 0;
+			}
+		}
+	}
+}

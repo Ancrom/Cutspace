@@ -1,0 +1,44 @@
+/* ========== THANKS ========== */
+.thanks {
+	padding: 60px 0;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 0 58px 0;
+	}
+	&__title {
+		max-width: 455px;
+	}
+	&__text {
+		max-width: 400px;
+	}
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 30px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: -40px;
+			right: -40px;
+			width: 80px;
+			height: 80px;
+			background: url(./../img/logo.svg) center / contain no-repeat;
+			transform: rotate(-45deg);
+		}
+	}
+	@media (max-width: 991px) {
+		&__header {
+			flex-flow: column;
+			text-align: center;
+			> * + * {
+				margin: 10px 0 0 0;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 60px 0 0 0;
+	}
+}

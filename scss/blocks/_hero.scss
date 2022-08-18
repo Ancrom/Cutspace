@@ -1,0 +1,53 @@
+/* ========== HERO ========== */
+.hero {
+	padding: 0 0 50px 0;
+	&__container {
+		position: relative;
+	}
+	&__content {
+		padding: 127px 0 133px 0;
+		position: relative;
+		z-index: 2;
+		max-width: 625px;
+		& > * + * {
+			margin: 25px 0 0 0;
+		}
+	}
+	&__image {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 530px;
+		img {
+			object-position: center;
+			border-radius: 40px 40px 40px 0px;
+		}
+	}
+	&__text {
+		max-width: 465px;
+	}
+	&__form {
+		margin: 42px 0 0 0;
+	}
+
+	@media (max-width: 1130px) {
+		&__image {
+			opacity: 0.3;
+		}
+	}
+	@media (max-width: 991px) {
+		&__image {
+			left: 0;
+			width: unset;
+			margin: 0 -15px;
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 0 0 25px 0;
+		&__content {
+			padding: 50px 0;
+		}
+	}
+}

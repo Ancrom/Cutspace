@@ -1,0 +1,26 @@
+/* ========== FORM ========== */
+.form {
+	max-width: 465px;
+	background: var(--accent-color-second);
+	border-radius: 30px;
+	&__label {
+		border-radius: 30px;
+		display: flex;
+		box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+	}
+	&__input {
+		border-radius: 30px;
+		flex: 1 0 auto;
+		line-height: 1.5;
+		padding: 17px 10px 17px 72px;
+		background: url(./../img/icons/mail.svg) 26px 50% / 24px 18px no-repeat;
+	}
+	@media (max-width: 460px) {
+		&__label {
+			flex-flow: column;
+		}
+		&__button {
+			border-radius: 0 0 30px 30px;
+		}
+	}
+}

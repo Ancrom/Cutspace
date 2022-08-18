@@ -1,0 +1,19 @@
+/* ========== TITLE ========== */
+.title {
+	color: var(--text-color-main);
+	font-size: rem(42);
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.8px;
+
+	@media (max-width: 767px) {
+		 font-size: rem(24);
+	}
+
+	&--large {
+		font-size: rem(54);
+		@media (max-width: 767px) {
+			 font-size: rem(24);
+		}
+	}
+}

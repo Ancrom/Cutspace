@@ -1,0 +1,47 @@
+/* ========== HOW ========== */
+.how {
+	padding: 130px 0 0 0;
+	background: #f5f6fa;
+	&__container {
+		text-align: center;
+	}
+	&__header {
+		margin: 0 0 45px 0;
+		& > * + * {
+			margin: 10px 0 0 0;
+		}
+	}
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(466px, 1fr));
+		gap: 30px;
+		justify-items: center;
+		position: relative;
+		z-index: 1;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: calc(-1 * (100vw - 1100px) / 2);
+			width: 100vw;
+			height: 50%;
+			background: #fff;
+			@media (max-width: 1130px) {
+				left: -15px;
+			}
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+		@media (max-width: 496px) {
+			grid-template-columns: 1fr;
+		}
+	}
+	&__card {
+		position: relative;
+		z-index: 2;
+	}
+	@media (max-width: 767px) {
+		padding: 90px 0 0 0;
+	}
+}

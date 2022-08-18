@@ -1,0 +1,12 @@
+/* ========== SOCIAL ========== */
+.social {
+	&__list {
+		display: flex;
+
+	}
+	&__item {
+		& + & {
+			margin: 0 0 0 30px;
+		}
+	}
+}

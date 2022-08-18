@@ -1,0 +1,13 @@
+/* ========== HEADER ========== */
+.header {
+	padding: 35px 0;
+	position: relative;
+	&__logo {
+		&:not(:last-child) {
+			margin: 0 15px 0 0;
+		}
+	}
+	@media (max-width: 991px) {
+		padding: 15px 0;
+	}
+}

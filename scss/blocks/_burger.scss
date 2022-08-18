@@ -1,0 +1,48 @@
+/* ========== BURGER ========== */
+.burger {
+	display: none;
+	position: relative;
+	z-index: 9999;
+	width: 30px;
+	height: 24px;
+	&__line {
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 3px;
+		border-radius: 2px;
+		background: #000;
+		transition: 0.2s ease-out;
+		&:nth-child(1) {
+			top: 0;
+		}
+		&:nth-child(2) {
+			top: 12px;
+		}
+		&:nth-child(3) {
+			top: 24px;
+		}
+	}
+	&.active {
+		.burger {
+			&__line {
+				transition: 0.2s ease-out;
+				top: 12px;
+				&:nth-child(1) {
+					transform: rotate(45deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+					transform: scale(2);
+				}
+				&:nth-child(3) {
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+		display: flex;
+	}
+}

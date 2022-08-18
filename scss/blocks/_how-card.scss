@@ -1,0 +1,46 @@
+/* ========== HOW-CARD ========== */
+.how-card {
+	max-width: 500px;
+	background: #fff;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	padding: 40px 88px;
+	border-radius: 10px;
+	transition: 0.3s ease-out;
+	&:hover {
+		color: var(--text-color-second);
+		background: var(--accent-color-main);
+		path {
+			transition: 0.3s ease-out;
+			fill: #fff;
+		}
+		.title {
+			color: inherit;
+		}
+	}
+	&__icon {
+		&:not(:last-child) {
+			margin: 0 0 15px 0;
+		}
+	}
+	&__text {
+		letter-spacing: 1.15px;
+		&:not(:last-child) {
+			margin: 0 0 25px 0;
+		}
+	}
+	@media (max-width: 767px) {
+		&__title {
+			font-size: rem(20);
+		}
+	}
+
+	@media (max-width: 496px) {
+		width: 100%;
+		padding: 40px 70px;
+	}
+	@media (max-width: 400px) {
+		padding: 40px 20px;
+	}
+}
