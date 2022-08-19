@@ -1,12 +1,21 @@
 // =============== BURGER ===============
 const burger = document.querySelector(".burger");
 const navMenu = document.querySelector(".nav-list");
+const navLink = navMenu.children;
 
 burger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
   burger.classList.toggle("active");
   document.body.classList.toggle("no-scroll");
 });
+
+for (let i = 0; i < navLink.length; i++) {
+  navLink[i].addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    burger.classList.toggle("active");
+    document.body.classList.toggle("no-scroll");
+  });
+}
 
 // =============== TOOLTIP ===============
 const imageCards = document.querySelector(".image-cards");
@@ -19,3 +28,4 @@ imageCards.addEventListener("mousemove", (e) => {
   tooltip.style.top = relY + "px";
   tooltip.style.left = relX + "px";
 });
+
